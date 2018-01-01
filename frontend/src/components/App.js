@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom'
 import './App.css';
+
 
 const App = ({ testString, reducerTest }) => {
     return (
@@ -37,6 +39,7 @@ const App = ({ testString, reducerTest }) => {
                     <li>react-addons-udpate</li>
                 </ul>
             </div>
+            <Link to='/about'>About</Link>
         </div>
     )
 }

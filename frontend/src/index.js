@@ -19,8 +19,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './index.css'
 
 //Example import
-import AppContainer from 'containers/AppContainer';
-import About from 'containers/About';
+import {AppContainer, About} from 'containers'
 //Example import end
 
 const store = createStore(reducers, applyMiddleware(thunk));
