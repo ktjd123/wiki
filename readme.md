@@ -1,4 +1,4 @@
-this is pBoiler app
+this is theSeed (react, express, mongoose boilerplate)
 
 development
 
