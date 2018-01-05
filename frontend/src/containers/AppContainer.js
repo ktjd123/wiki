@@ -11,7 +11,7 @@ class AppContainer extends React.Component{
   render(){
     return(
       <div>
-        <MainTemplate App={<Main/>}/>
+        <MainTemplate App={<Main {...this.props}/>}/>
       </div>
     )
   }
