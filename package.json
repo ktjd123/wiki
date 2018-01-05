@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -r ./build",
-    "build": "cd backend && npm run build && cd ../frontend && npm run build && cd ../build/backend",
+    "build": "rm -rf ./build && cd backend && npm run build && cd ../frontend && npm run build && cd ../build/backend",
     "start": "node build/backend/index.js"
   },
   "author": "Sungmin Kim",
