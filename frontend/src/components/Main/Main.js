@@ -35,7 +35,7 @@ const Main = ({ testString, reducerTest }) => {
                     <li>react-router</li>
                     <li>redux-thunk</li>
                     <li>axios</li>
-                    <li>react-addons-udpate</li>
+                    <li>immutable</li>
                 </ul>
             </div>
             <Link to='/about'>About</Link>
