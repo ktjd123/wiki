@@ -1,5 +1,5 @@
 import React from 'react';
-import './MainTemplate'
+import './MainTemplate.css'
 
 const MainTemplate = ({App}) => {
     return (
