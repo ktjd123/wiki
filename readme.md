@@ -1,16 +1,15 @@
-this is theSeed (react, express, mongoose boilerplate)
+this is the Wiki
 
 development
 
 -cd backend
--npm run development
+-yarn d
 
 -cd frontend
--npm run start
+-yarn d
 
 deploy
 -build
---npm run build
+--yarn build
 -deploy
---cd build/backend
---node index.js
+--node backend/inde.js
