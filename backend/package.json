@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "build": "babel src -d ./../build/backend --presets=es2015 && rm -r ./../build/backend/node_modules &&cp -r ./node_modules ./../build/backend/node_modules  && rm -r ./../build/backend/scripts",
+    "build": "babel src -d ./../build/backend --presets=es2015 && rm -rf ./../build/backend/node_modules &&cp -r ./node_modules ./../build/backend/node_modules  && rm -r ./../build/backend/scripts",
     "start": "node ./../build/backend/index.js",
     "d": "node ./src/scripts/development.js",
     "test": "echo \"Error: no test specified\" && exit 1"
