@@ -1,24 +1,22 @@
-
-//Redux Things
 import React from 'react'
 import * as actions from 'actions';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
-import {MainTemplate} from 'components'
-import {Main} from 'components';
+import { MainTemplate } from 'components'
+import { Main } from 'components';
 
-class AppContainer extends React.Component{
-  render(){
-    return(
+class AppContainer extends React.Component {
+  render() {
+    return (
       <div>
-        <MainTemplate App={<Main {...this.props}/>}/>
+        <MainTemplate App={<Main {...this.props} />} />
       </div>
     )
   }
 }
 
 const mapStateToProps = (state) => ({
-  testString: state.test.string
+  testString: state.test.get('string')
 })
 
 const mapDispatchToProps = (dispatch) => ({
