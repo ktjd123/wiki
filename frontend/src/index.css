@@ -2,6 +2,7 @@ body{
     background: #f1f3f5;
     font-family: sans-serif;
     text-align: center;
+    margin-top: 50px;
 }
 
 *{
@@ -11,4 +12,8 @@ body{
 *:visited{
     color: black;
     text-decoration: none;
+}
+
+@media (max-width: 800px){
+    margin-top: 90px;
 }
