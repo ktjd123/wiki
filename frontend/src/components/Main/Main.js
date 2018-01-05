@@ -1,10 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom'
-import './App.css';
+import './Main.css';
 
 
-const App = ({ testString, reducerTest }) => {
+const Main = ({ testString, reducerTest }) => {
     return (
         <div>
             <div className="App">
@@ -43,15 +42,4 @@ const App = ({ testString, reducerTest }) => {
         </div>
     )
 }
-
-App.propTypes = {
-    testString: PropTypes.string,
-    reducerTest: PropTypes.func
-}
-
-App.defaultProps = {
-    testString: 'Not modified yet',
-    reducerTest: () => console.warn('reducer test not defined')
-}
-
-export default App;
+export default Main;

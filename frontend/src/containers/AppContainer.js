@@ -1,9 +1,21 @@
 
 //Redux Things
+import React from 'react'
 import * as actions from 'actions';
 import {connect} from 'react-redux';
 
-import App from 'components/App';
+import {MainTemplate} from 'components'
+import {Main} from 'components';
+
+class AppContainer extends React.Component{
+  render(){
+    return(
+      <div>
+        <MainTemplate App={<Main/>}/>
+      </div>
+    )
+  }
+}
 
 const mapStateToProps = (state) => ({
   testString: state.test.string
@@ -13,5 +25,5 @@ const mapDispatchToProps = (dispatch) => ({
   reducerTest: () => dispatch(actions.reducerTest())
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(AppContainer);
 
