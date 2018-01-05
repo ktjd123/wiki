@@ -30,3 +30,8 @@
   font-size: 3vw;
   font-weight: normal;
 }
+
+.App .cancel{
+  text-decoration: line-through;
+  display: inline;
+}
