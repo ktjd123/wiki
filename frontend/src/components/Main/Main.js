@@ -1,19 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import {parser} from 'lib/parser'
+import Cancel from './Cancel'
 import './Main.css';
 
 
 const Main = ({ testString, reducerTest }) => {
 
-    let string = "[그래서 그게 어쨌는데?] [또 왜]<br>"
-    let showString = "d"
+    let string = `[싫어] [또 왜]`
     let result = parser.get(string, "[", "]")
-    showString = (
-        <div className='cancel'>
-            {result[0]}
-        </div>
-    )
+    const showString = result.map((string, i) => {
+        return (
+            <Cancel string={string}
+                    key={i}
+            />
+        )
+    })
     return (
         <div>
             <div className="App">
@@ -27,7 +29,6 @@ const Main = ({ testString, reducerTest }) => {
                     <button
                         className="btn"
                         onClick={reducerTest}>
-                        REDUCER TEST
                 </button>
                 </div>
                 <div className="title">사용된 기술들</div>
