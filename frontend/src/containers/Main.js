@@ -3,14 +3,11 @@ import {Map, List} from 'immutable'
 import {MainTemplate} from 'components'
 
 class Main extends Component {
-    type = List({
-        component:  Map({
-            type: '',
-            string: List({
-                
-            })
+    type = List([
+        Map({
+            
         })
-    })
+    ])
 
     render() {
         return (
