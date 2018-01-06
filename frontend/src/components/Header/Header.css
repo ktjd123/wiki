@@ -37,7 +37,7 @@
     font-weight: 600;
 }
 
-.header .left > div{
+.header .left > a{
     display: flex;
     align-items: center;
 }

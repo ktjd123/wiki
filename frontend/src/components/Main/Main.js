@@ -1,11 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import {parser} from 'lib/parser'
 import './Main.css';
 
 
 const Main = ({ testString, reducerTest }) => {
 
-    let string = "[[[ 그래서 그게 어쨌는데? ]]]  쏼라쏼라 [[[또왜]]] <br>"
+    let string = "[그래서 그게 어쨌는데?] [또 왜]<br>"
+    let showString = "d"
+    let result = parser.get(string, "[", "]")
+    showString = (
+        <div className='cancel'>
+            {result[0]}
+        </div>
+    )
     return (
         <div>
             <div className="App">
@@ -23,15 +31,7 @@ const Main = ({ testString, reducerTest }) => {
                 </button>
                 </div>
                 <div className="title">사용된 기술들</div>
-                {
-                    string.split('[[[').map((inner, i) => {
-                        inner = inner.replace(']]]', '')
-                        if (i === 0) {
-                            return (<div className='cancel'>{inner}</div>)
-                        }
-                        return 0;
-                    })
-                }
+                {showString}
             </div>
             <Link to='/about'>About</Link>
         </div>
